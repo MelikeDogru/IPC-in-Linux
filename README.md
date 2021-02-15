@@ -43,6 +43,7 @@ gcc design_1/server.c
 <br>
 • Server opens the shared memory and waits for a client to write something into the memory (waits on a semaphore (read_semaphore which is initially 0))
 <br>
+
 To run the Design 2:
 1) Run the client:
 ```
@@ -69,6 +70,7 @@ gcc design_2/server.c -o server -lrt -pthread
 <br>
 • There are two semaphores: one for reader(server) one for writing permissions.
 <br>
+
 To run the Design 3:
 1) Run the client:
 ```
@@ -103,6 +105,7 @@ gcc design_3/server.c
 <br>
 • There is a single semaphore.
 <br>
+
 **Design 7: Sockets + Signals**
 <br>
 • This is same as the previous design.
